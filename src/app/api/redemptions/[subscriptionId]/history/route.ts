@@ -5,7 +5,7 @@
 
 import { NextRequest, NextResponse } from 'next/server';
 import { getRedemptionHistory } from '@/lib/services/redemption.service';
-import { GetRedemptionHistoryResponse, ApiError } from '@/types/api.types';
+import { ApiError } from '@/types/api.types';
 
 export async function GET(
   request: NextRequest,
