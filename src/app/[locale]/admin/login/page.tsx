@@ -65,7 +65,7 @@ export default function AdminLoginPage({ params }: { params: Promise<{ locale: s
 
         <form onSubmit={handleSubmit} className="space-y-4">
           {error && (
-            <Alert variant="error">
+            <Alert type="error">
               {error}
             </Alert>
           )}
