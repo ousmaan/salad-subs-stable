@@ -169,7 +169,7 @@ export default function SubscriptionsPage() {
                   {t('common.selectAll', { defaultValue: 'All' })}
                 </button>
                 <button
-                  onClick={() => setStatusFilter('active')}
+                  onClick={() => setStatusFilter('active' as SubscriptionStatus)}
                   className={`px-4 py-2 rounded-lg font-medium ${
                     statusFilter === 'active'
                       ? 'bg-green-600 text-white'
@@ -179,7 +179,7 @@ export default function SubscriptionsPage() {
                   {t('subscription.statusActive')}
                 </button>
                 <button
-                  onClick={() => setStatusFilter('pending_payment')}
+                  onClick={() => setStatusFilter('pending_payment' as SubscriptionStatus)}
                   className={`px-4 py-2 rounded-lg font-medium ${
                     statusFilter === 'pending_payment'
                       ? 'bg-yellow-600 text-white'
@@ -189,7 +189,7 @@ export default function SubscriptionsPage() {
                   {t('subscription.statusPending')}
                 </button>
                 <button
-                  onClick={() => setStatusFilter('expired')}
+                  onClick={() => setStatusFilter('expired' as SubscriptionStatus)}
                   className={`px-4 py-2 rounded-lg font-medium ${
                     statusFilter === 'expired'
                       ? 'bg-red-600 text-white'
