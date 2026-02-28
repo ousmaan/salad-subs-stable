@@ -149,11 +149,11 @@ export default function RedeemPage() {
       case 'pending_payment':
         return <Badge variant="warning">{t('redemption.pendingPayment')}</Badge>;
       case 'expired':
-        return <Badge variant="error">{t('subscription.statusExpired')}</Badge>;
+        return <Badge variant="danger">{t('subscription.statusExpired')}</Badge>;
       case 'refunded':
-        return <Badge variant="secondary">{t('subscription.statusRefunded')}</Badge>;
+        return <Badge variant="neutral">{t('subscription.statusRefunded')}</Badge>;
       default:
-        return <Badge variant="secondary">{status}</Badge>;
+        return <Badge variant="neutral">{status}</Badge>;
     }
   };
 
