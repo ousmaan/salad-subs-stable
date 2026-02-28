@@ -262,15 +262,19 @@ export default function ActivatePage() {
                 <p className="font-bold text-primary-600">{selectedSubscription.price} {t('common.currency')}</p>
               </div>
               
-              <Input
-                label={t('activation.receiptNumber')}
-                placeholder={t('activation.receiptNumberPlaceholder')}
-                type="text"
-                maxLength={5}
-                value={receiptNumber}
-                onChange={(e) => setReceiptNumber(e.target.value.replace(/\D/g, ''))}
-                helperText={t('activation.receiptNumberHelper')}
-              />
+              <div>
+                <Input
+                  label={t('activation.receiptNumber')}
+                  placeholder={t('activation.receiptNumberPlaceholder')}
+                  type="text"
+                  maxLength={5}
+                  value={receiptNumber}
+                  onChange={(e) => setReceiptNumber(e.target.value.replace(/\D/g, ''))}
+                />
+                <p className="mt-1 text-xs text-secondary-500">
+                  {t('activation.receiptNumberHelper')}
+                </p>
+              </div>
 
               <div className="flex gap-3">
                 <Button
