@@ -1,0 +1,43 @@
+22:14:27.462 Running build in Washington, D.C., USA (East) – iad1
+22:14:27.462 Build machine configuration: 2 cores, 8 GB
+22:14:27.628 Cloning github.com/ousmaan/salad-subs-stable (Branch: master, Commit: 878f98f)
+22:14:27.629 Previous build caches not available.
+22:14:27.913 Cloning completed: 285.000ms
+22:14:29.931 Running "vercel build"
+22:14:30.543 Vercel CLI 50.23.2
+22:14:30.882 Installing dependencies...
+22:14:32.380 npm error code ERESOLVE
+22:14:32.381 npm error ERESOLVE could not resolve
+22:14:32.381 npm error
+22:14:32.383 npm error While resolving: react-to-print@2.15.1
+22:14:32.383 npm error Found: react@19.2.4
+22:14:32.383 npm error node_modules/react
+22:14:32.383 npm error   react@"^19.2.4" from the root project
+22:14:32.384 npm error   peer react@"^18.2.0 || 19.0.0-rc-de68d2f4-20241204 || ^19.0.0" from next@16.1.6
+22:14:32.384 npm error   node_modules/next
+22:14:32.384 npm error     next@"^16.1.6" from the root project
+22:14:32.385 npm error     peer next@"^12.0.0 || ^13.0.0 || ^14.0.0 || ^15.0.0 || ^16.0.0" from next-intl@4.8.3
+22:14:32.385 npm error     node_modules/next-intl
+22:14:32.385 npm error       next-intl@"^4.8.3" from the root project
+22:14:32.385 npm error   7 more (next-intl, react-dom, react-smooth, ...)
+22:14:32.386 npm error
+22:14:32.386 npm error Could not resolve dependency:
+22:14:32.386 npm error peer react@"^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0" from react-to-print@2.15.1
+22:14:32.386 npm error node_modules/react-to-print
+22:14:32.386 npm error   react-to-print@"^2.15.0" from the root project
+22:14:32.386 npm error
+22:14:32.386 npm error Conflicting peer dependency: react@18.3.1
+22:14:32.386 npm error node_modules/react
+22:14:32.386 npm error   peer react@"^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0" from react-to-print@2.15.1
+22:14:32.386 npm error   node_modules/react-to-print
+22:14:32.386 npm error     react-to-print@"^2.15.0" from the root project
+22:14:32.387 npm error
+22:14:32.387 npm error Fix the upstream dependency conflict, or retry
+22:14:32.387 npm error this command with --force or --legacy-peer-deps
+22:14:32.387 npm error to accept an incorrect (and potentially broken) dependency resolution.
+22:14:32.387 npm error
+22:14:32.387 npm error
+22:14:32.387 npm error For a full report see:
+22:14:32.388 npm error /vercel/.npm/_logs/2026-02-28T19_14_31_108Z-eresolve-report.txt
+22:14:32.389 npm error A complete log of this run can be found in: /vercel/.npm/_logs/2026-02-28T19_14_31_108Z-debug-0.log
+22:14:32.420 Error: Command "npm install" exited with 1
