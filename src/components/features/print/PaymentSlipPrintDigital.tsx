@@ -39,7 +39,7 @@ export function PaymentSlipPrintDigital({
   const componentRef = useRef<HTMLDivElement>(null);
 
   const handlePrint = useReactToPrint({
-    content: () => componentRef.current,
+    contentRef: componentRef,
     documentTitle: `Payment-Slip-${subscription.subscriptionCode}`,
   });
 

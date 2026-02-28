@@ -8,7 +8,6 @@
 import { useState, useRef, useEffect } from 'react';
 import { useTranslations } from 'next-intl';
 import { Modal } from '@/components/ui/Modal';
-import { Input } from '@/components/ui/Input';
 import { Button } from '@/components/ui/Button';
 import { Alert } from '@/components/ui/Alert';
 import type { SubscriptionWithCustomer } from '@/types/entities';
@@ -28,29 +27,28 @@ export function RefundModal({ isOpen, onClose, subscription, onSuccess }: Refund
 
   // Set custom validation message
   useEffect(() => {
-    if (textareaRef.current) {
-      const textarea = textareaRef.current;
-      
-      const handleInvalid = (e: Event) => {
-        e.preventDefault();
-        if (textarea.validity.valueMissing) {
-          textarea.setCustomValidity(t('required'));
-        }
-        textarea.reportValidity();
-      };
+    const textarea = textareaRef.current;
+    if (!textarea) return;
+    
+    const handleInvalid = (e: Event) => {
+      e.preventDefault();
+      if (textarea.validity.valueMissing) {
+        textarea.setCustomValidity(t('required'));
+      }
+      textarea.reportValidity();
+    };
 
-      const handleInput = () => {
-        textarea.setCustomValidity('');
-      };
+    const handleInput = () => {
+      textarea.setCustomValidity('');
+    };
 
-      textarea.addEventListener('invalid', handleInvalid);
-      textarea.addEventListener('input', handleInput);
+    textarea.addEventListener('invalid', handleInvalid);
+    textarea.addEventListener('input', handleInput);
 
-      return () => {
-        textarea.removeEventListener('invalid', handleInvalid);
-        textarea.removeEventListener('input', handleInput);
-      };
-    }
+    return () => {
+      textarea.removeEventListener('invalid', handleInvalid);
+      textarea.removeEventListener('input', handleInput);
+    };
   }, [t]);
   const [reason, setReason] = useState('');
   const [refundType, setRefundType] = useState<'full' | 'partial'>('full');

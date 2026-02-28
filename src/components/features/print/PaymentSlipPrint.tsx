@@ -33,11 +33,11 @@ export function PaymentSlipPrint({
   const componentRef = useRef<HTMLDivElement>(null);
 
   const handlePrint = useReactToPrint({
-    content: () => componentRef.current,
+    contentRef: componentRef,
     documentTitle: `Payment-Slip-${subscription.subscriptionCode}`,
   });
 
-  const planName = subscription.planType === 'weekly' ? t('customer.weekly') : t('customer.monthly');
+  const planName = subscription.planType === 'biweekly' ? t('customer.biweekly') : t('customer.monthly');
 
   return (
     <div className="space-y-4">
