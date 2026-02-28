@@ -1,54 +1,53 @@
-22:36:55.342 Running build in Washington, D.C., USA (East) – iad1
-22:36:55.342 Build machine configuration: 2 cores, 8 GB
-22:36:55.486 Cloning github.com/ousmaan/salad-subs-stable (Branch: master, Commit: 769e370)
-22:36:55.487 Previous build caches not available.
-22:36:55.775 Cloning completed: 289.000ms
-22:36:57.896 Running "vercel build"
-22:36:58.520 Vercel CLI 50.23.2
-22:36:58.844 Installing dependencies...
-22:37:01.418 npm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
-22:37:02.118 npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
-22:37:03.543 npm warn deprecated @humanwhocodes/config-array@0.13.0: Use @eslint/config-array instead
-22:37:03.589 npm warn deprecated @humanwhocodes/object-schema@2.0.3: Use @eslint/object-schema instead
-22:37:03.698 npm warn deprecated glob@7.2.3: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
-22:37:04.989 npm warn deprecated glob@10.3.10: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
-22:37:07.667 npm warn deprecated eslint@8.57.1: This version is no longer supported. Please see https://eslint.org/version-support for other options.
-22:37:14.862 
-22:37:14.863 added 472 packages in 16s
-22:37:14.863 
-22:37:14.863 170 packages are looking for funding
-22:37:14.863   run `npm fund` for details
-22:37:14.927 Detected Next.js version: 16.1.6
-22:37:14.933 Running "npm run build"
-22:37:15.040 
-22:37:15.041 > salad-subscription-system@1.0.0 build
-22:37:15.041 > next build
-22:37:15.041 
-22:37:15.710 Attention: Next.js now collects completely anonymous telemetry regarding usage.
-22:37:15.711 This information is used to shape Next.js' roadmap and prioritize features.
-22:37:15.711 You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
-22:37:15.711 https://nextjs.org/telemetry
-22:37:15.711 
-22:37:15.729 ▲ Next.js 16.1.6 (Turbopack)
-22:37:15.730 - Experiments (use with caution):
-22:37:15.731   · serverActions
-22:37:15.731 
-22:37:15.742 ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
-22:37:15.775   Creating an optimized production build ...
-22:37:28.204 ✓ Compiled successfully in 12.1s
-22:37:28.209   Running TypeScript ...
-22:37:34.461 Failed to compile.
-22:37:34.461 
-22:37:34.461 ./src/app/[locale]/admin/login/page.tsx:68:20
-22:37:34.461 Type error: Type '{ children: string; variant: string; }' is not assignable to type 'IntrinsicAttributes & AlertProps'.
-22:37:34.461   Property 'variant' does not exist on type 'IntrinsicAttributes & AlertProps'.
-22:37:34.461 
-22:37:34.461 [0m [90m 66 |[39m         [33m<[39m[33mform[39m onSubmit[33m=[39m{handleSubmit} className[33m=[39m[32m"space-y-4"[39m[33m>[39m
-22:37:34.462  [90m 67 |[39m           {error [33m&&[39m (
-22:37:34.462 [31m[1m>[22m[39m[90m 68 |[39m             [33m<[39m[33mAlert[39m variant[33m=[39m[32m"error"[39m[33m>[39m
-22:37:34.462  [90m    |[39m                    [31m[1m^[22m[39m
-22:37:34.462  [90m 69 |[39m               {error}
-22:37:34.462  [90m 70 |[39m             [33m<[39m[33m/[39m[33mAlert[39m[33m>[39m
-22:37:34.462  [90m 71 |[39m           )}[0m
-22:37:34.496 Next.js build worker exited with code: 1 and signal: null
-22:37:34.538 Error: Command "npm run build" exited with 1
+22:39:20.490 Running build in Washington, D.C., USA (East) – iad1
+22:39:20.491 Build machine configuration: 2 cores, 8 GB
+22:39:20.694 Cloning github.com/ousmaan/salad-subs-stable (Branch: master, Commit: 5c64caa)
+22:39:20.695 Previous build caches not available.
+22:39:21.020 Cloning completed: 325.000ms
+22:39:23.101 Running "vercel build"
+22:39:23.756 Vercel CLI 50.23.2
+22:39:24.060 Installing dependencies...
+22:39:26.815 npm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
+22:39:27.511 npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+22:39:28.812 npm warn deprecated @humanwhocodes/config-array@0.13.0: Use @eslint/config-array instead
+22:39:28.839 npm warn deprecated @humanwhocodes/object-schema@2.0.3: Use @eslint/object-schema instead
+22:39:28.866 npm warn deprecated glob@7.2.3: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+22:39:30.039 npm warn deprecated glob@10.3.10: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+22:39:32.501 npm warn deprecated eslint@8.57.1: This version is no longer supported. Please see https://eslint.org/version-support for other options.
+22:39:37.834 
+22:39:37.835 added 472 packages in 13s
+22:39:37.835 
+22:39:37.835 170 packages are looking for funding
+22:39:37.836   run `npm fund` for details
+22:39:37.894 Detected Next.js version: 16.1.6
+22:39:37.899 Running "npm run build"
+22:39:37.999 
+22:39:38.000 > salad-subscription-system@1.0.0 build
+22:39:38.000 > next build
+22:39:38.000 
+22:39:38.572 Attention: Next.js now collects completely anonymous telemetry regarding usage.
+22:39:38.572 This information is used to shape Next.js' roadmap and prioritize features.
+22:39:38.572 You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+22:39:38.572 https://nextjs.org/telemetry
+22:39:38.572 
+22:39:38.588 ▲ Next.js 16.1.6 (Turbopack)
+22:39:38.588 - Experiments (use with caution):
+22:39:38.588   · serverActions
+22:39:38.588 
+22:39:38.597 ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+22:39:38.626   Creating an optimized production build ...
+22:39:50.566 ✓ Compiled successfully in 11.6s
+22:39:50.570   Running TypeScript ...
+22:39:56.735 Failed to compile.
+22:39:56.735 
+22:39:56.735 ./src/app/[locale]/admin/subscriptions/page.tsx:11:1
+22:39:56.735 Type error: 'Button' is declared but its value is never read.
+22:39:56.736 
+22:39:56.736 [0m [90m  9 |[39m [36mimport[39m { [33mCard[39m[33m,[39m [33mCardContent[39m[33m,[39m [33mCardHeader[39m[33m,[39m [33mCardTitle[39m } [36mfrom[39m [32m'@/components/ui/Card'[39m[33m;[39m
+22:39:56.736  [90m 10 |[39m [36mimport[39m { [33mInput[39m } [36mfrom[39m [32m'@/components/ui/Input'[39m[33m;[39m
+22:39:56.736 [31m[1m>[22m[39m[90m 11 |[39m [36mimport[39m { [33mButton[39m } [36mfrom[39m [32m'@/components/ui/Button'[39m[33m;[39m
+22:39:56.736  [90m    |[39m [31m[1m^[22m[39m
+22:39:56.736  [90m 12 |[39m [36mimport[39m { [33mBadge[39m } [36mfrom[39m [32m'@/components/ui/Badge'[39m[33m;[39m
+22:39:56.736  [90m 13 |[39m [36mimport[39m { [33mSpinner[39m } [36mfrom[39m [32m'@/components/ui/Spinner'[39m[33m;[39m
+22:39:56.736  [90m 14 |[39m [36mimport[39m { [33mAlert[39m } [36mfrom[39m [32m'@/components/ui/Alert'[39m[33m;[39m[0m
+22:39:56.771 Next.js build worker exited with code: 1 and signal: null
+22:39:56.805 Error: Command "npm run build" exited with 1
