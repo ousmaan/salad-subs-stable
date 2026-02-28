@@ -21,8 +21,8 @@ export default function ConfigPage() {
   const [success, setSuccess] = useState('');
   
   const [planConfig, setPlanConfig] = useState<PlanConfig>({
-    weekly: { price: 50, salads: 7, durationDays: 7 },
-    monthly: { price: 180, salads: 30, durationDays: 30 },
+    biweekly: { price: 75, salads: 15, validityDays: 15, gracePeriodDays: 3 },
+    monthly: { price: 180, salads: 30, validityDays: 30, gracePeriodDays: 5 },
   });
 
   const [businessConfig, setBusinessConfig] = useState<BusinessConfig>({
