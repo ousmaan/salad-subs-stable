@@ -1,53 +1,53 @@
-00:45:32.141 Running build in Washington, D.C., USA (East) – iad1
-00:45:32.141 Build machine configuration: 2 cores, 8 GB
-00:45:32.271 Cloning github.com/ousmaan/salad-subs-stable (Branch: master, Commit: 1c6503e)
-00:45:32.272 Previous build caches not available.
-00:45:32.561 Cloning completed: 290.000ms
-00:45:34.603 Running "vercel build"
-00:45:35.220 Vercel CLI 50.23.2
-00:45:35.522 Installing dependencies...
-00:45:38.156 npm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
-00:45:38.578 npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
-00:45:39.850 npm warn deprecated @humanwhocodes/config-array@0.13.0: Use @eslint/config-array instead
-00:45:39.913 npm warn deprecated @humanwhocodes/object-schema@2.0.3: Use @eslint/object-schema instead
-00:45:39.988 npm warn deprecated glob@7.2.3: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
-00:45:41.135 npm warn deprecated glob@10.3.10: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
-00:45:43.618 npm warn deprecated eslint@8.57.1: This version is no longer supported. Please see https://eslint.org/version-support for other options.
-00:45:49.004 
-00:45:49.005 added 472 packages in 13s
-00:45:49.005 
-00:45:49.005 170 packages are looking for funding
-00:45:49.005   run `npm fund` for details
-00:45:49.058 Detected Next.js version: 16.1.6
-00:45:49.063 Running "npm run build"
-00:45:49.157 
-00:45:49.158 > salad-subscription-system@1.0.0 build
-00:45:49.158 > next build
-00:45:49.158 
-00:45:49.802 Attention: Next.js now collects completely anonymous telemetry regarding usage.
-00:45:49.802 This information is used to shape Next.js' roadmap and prioritize features.
-00:45:49.802 You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
-00:45:49.802 https://nextjs.org/telemetry
-00:45:49.803 
-00:45:49.817 ▲ Next.js 16.1.6 (Turbopack)
-00:45:49.817 - Experiments (use with caution):
-00:45:49.818   · serverActions
-00:45:49.818 
-00:45:49.826 ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
-00:45:49.853   Creating an optimized production build ...
-00:46:01.454 ✓ Compiled successfully in 11.3s
-00:46:01.455   Running TypeScript ...
-00:46:07.522 Failed to compile.
-00:46:07.523 
-00:46:07.523 ./src/components/features/subscription/RefundModal.tsx:165:55
-00:46:07.523 Type error: Cannot find name 'partialRefundAmount'.
-00:46:07.523 
-00:46:07.523 [0m [90m 163 |[39m             [33m>[39m
-00:46:07.524  [90m 164 |[39m               [33m<[39m[33mp[39m className[33m=[39m[32m"font-bold"[39m[33m>[39m{tCommon([32m'refund.partialRefund'[39m)}[33m<[39m[33m/[39m[33mp[39m[33m>[39m
-00:46:07.524 [31m[1m>[22m[39m[90m 165 |[39m               [33m<[39m[33mp[39m className[33m=[39m[32m"text-2xl font-bold mt-1"[39m[33m>[39m{partialRefundAmount} [33mSAR[39m[33m<[39m[33m/[39m[33mp[39m[33m>[39m
-00:46:07.524  [90m     |[39m                                                       [31m[1m^[22m[39m
-00:46:07.524  [90m 166 |[39m             [33m<[39m[33m/[39m[33mbutton[39m[33m>[39m
-00:46:07.524  [90m 167 |[39m           [33m<[39m[33m/[39m[33mdiv[39m[33m>[39m
-00:46:07.525  [90m 168 |[39m         [33m<[39m[33m/[39m[33mdiv[39m[33m>[39m[0m
-00:46:07.568 Next.js build worker exited with code: 1 and signal: null
-00:46:07.605 Error: Command "npm run build" exited with 1
+01:05:17.175 Running build in Washington, D.C., USA (East) – iad1
+01:05:17.175 Build machine configuration: 2 cores, 8 GB
+01:05:17.309 Cloning github.com/ousmaan/salad-subs-stable (Branch: master, Commit: 78a424a)
+01:05:17.310 Previous build caches not available.
+01:05:17.592 Cloning completed: 283.000ms
+01:05:19.522 Running "vercel build"
+01:05:20.109 Vercel CLI 50.23.2
+01:05:20.436 Installing dependencies...
+01:05:22.785 npm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
+01:05:23.382 npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+01:05:24.664 npm warn deprecated @humanwhocodes/config-array@0.13.0: Use @eslint/config-array instead
+01:05:24.704 npm warn deprecated @humanwhocodes/object-schema@2.0.3: Use @eslint/object-schema instead
+01:05:24.724 npm warn deprecated glob@7.2.3: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+01:05:25.812 npm warn deprecated glob@10.3.10: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+01:05:28.130 npm warn deprecated eslint@8.57.1: This version is no longer supported. Please see https://eslint.org/version-support for other options.
+01:05:33.652 
+01:05:33.653 added 472 packages in 13s
+01:05:33.654 
+01:05:33.654 170 packages are looking for funding
+01:05:33.654   run `npm fund` for details
+01:05:33.706 Detected Next.js version: 16.1.6
+01:05:33.711 Running "npm run build"
+01:05:33.800 
+01:05:33.801 > salad-subscription-system@1.0.0 build
+01:05:33.801 > next build
+01:05:33.801 
+01:05:34.341 Attention: Next.js now collects completely anonymous telemetry regarding usage.
+01:05:34.342 This information is used to shape Next.js' roadmap and prioritize features.
+01:05:34.342 You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+01:05:34.342 https://nextjs.org/telemetry
+01:05:34.343 
+01:05:34.354 ▲ Next.js 16.1.6 (Turbopack)
+01:05:34.355 - Experiments (use with caution):
+01:05:34.355   · serverActions
+01:05:34.355 
+01:05:34.357 ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+01:05:34.390   Creating an optimized production build ...
+01:05:45.033 ✓ Compiled successfully in 10.3s
+01:05:45.036   Running TypeScript ...
+01:05:50.792 Failed to compile.
+01:05:50.792 
+01:05:50.792 ./src/components/features/subscription/RefundModal.tsx:62:9
+01:05:50.792 Type error: 'refundAmount' is declared but its value is never read.
+01:05:50.793 
+01:05:50.793 [0m [90m 60 |[39m   [36mconst[39m pricePerSalad [33m=[39m subscription[33m.[39mprice [33m/[39m subscription[33m.[39mtotalSalads[33m;[39m
+01:05:50.793  [90m 61 |[39m   [36mconst[39m partialRefundAmount [33m=[39m [33mMath[39m[33m.[39mround(subscription[33m.[39mremainingSalads [33m*[39m pricePerSalad [33m*[39m [35m100[39m) [33m/[39m [35m100[39m[33m;[39m
+01:05:50.793 [31m[1m>[22m[39m[90m 62 |[39m   [36mconst[39m refundAmount [33m=[39m refundType [33m===[39m [32m'full'[39m [33m?[39m subscription[33m.[39mprice [33m:[39m partialRefundAmount[33m;[39m
+01:05:50.793  [90m    |[39m         [31m[1m^[22m[39m
+01:05:50.793  [90m 63 |[39m
+01:05:50.793  [90m 64 |[39m   [36mconst[39m handleSubmit [33m=[39m [36masync[39m () [33m=>[39m {
+01:05:50.793  [90m 65 |[39m     [90m// Validate using HTML5 validation[39m[0m
+01:05:50.827 Next.js build worker exited with code: 1 and signal: null
+01:05:50.862 Error: Command "npm run build" exited with 1

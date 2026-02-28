@@ -59,7 +59,6 @@ export function RefundModal({ isOpen, onClose, subscription, onSuccess }: Refund
   // Calculate refund amounts for display
   const pricePerSalad = subscription.price / subscription.totalSalads;
   const partialRefundAmount = Math.round(subscription.remainingSalads * pricePerSalad * 100) / 100;
-  const refundAmount = refundType === 'full' ? subscription.price : partialRefundAmount;
 
   const handleSubmit = async () => {
     // Validate using HTML5 validation
