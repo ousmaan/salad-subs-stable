@@ -31,16 +31,16 @@ export function useFormValidation(formRef: RefObject<HTMLFormElement>) {
           target.setCustomValidity(t('invalidPhone'));
         }
       } else if (target.validity.tooShort) {
-        const minLength = target.getAttribute('minlength');
+        const minLength = target.getAttribute('minlength') || '';
         target.setCustomValidity(t('minLength', { min: minLength }));
       } else if (target.validity.tooLong) {
-        const maxLength = target.getAttribute('maxlength');
+        const maxLength = target.getAttribute('maxlength') || '';
         target.setCustomValidity(t('maxLength', { max: maxLength }));
       } else if (target.validity.rangeUnderflow) {
-        const min = target.getAttribute('min');
+        const min = target.getAttribute('min') || '';
         target.setCustomValidity(t('minValue', { min }));
       } else if (target.validity.rangeOverflow) {
-        const max = target.getAttribute('max');
+        const max = target.getAttribute('max') || '';
         target.setCustomValidity(t('maxValue', { max }));
       } else if (target.validity.patternMismatch) {
         target.setCustomValidity(t('invalidFormat'));
