@@ -12,8 +12,8 @@ import { encodeJWT } from '@/lib/utils/jwt';
 
 export async function POST(request: NextRequest) {
   return withLoginRateLimit(request, async (req) => {
-  try {
-    const body = await request.json();
+    try {
+      const body = await req.json();
 
     // Validate input
     const validationResult = staffLoginSchema.safeParse(body);
