@@ -3,7 +3,7 @@
  * POST /api/auth/logout
  */
 
-import { NextRequest, NextResponse } from 'next/server';
+import { NextResponse } from 'next/server';
 
 export async function POST() {
   const res = NextResponse.json({ success: true, message: 'تم تسجيل الخروج بنجاح' });
