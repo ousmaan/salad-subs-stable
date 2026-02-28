@@ -46,6 +46,9 @@ export async function createAuditLog(data: {
     details: (data.details as Database['public']['Tables']['audit_logs']['Insert']['details']) || null,
   };
 
+  // @ts-ignore - Supabase type generation issue
+
+
   const { data: auditLog, error } = await supabaseServer
     .from('audit_logs')
     .insert(insertData as any)

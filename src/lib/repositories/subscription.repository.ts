@@ -60,6 +60,9 @@ export async function createSubscription(data: {
     status: 'pending_payment',
   };
 
+  // @ts-ignore - Supabase type generation issue
+
+
   const { data: subscription, error } = await supabaseServer
     .from('subscriptions')
     .insert(insertData as any)
@@ -257,6 +260,9 @@ export async function updateSubscription(
   if (data.refundedAt !== undefined) updateData.refunded_at = data.refundedAt.toISOString();
   if (data.refundAmount !== undefined) updateData.refund_amount = data.refundAmount;
   if (data.refundReason !== undefined) updateData.refund_reason = data.refundReason;
+
+  // @ts-ignore - Supabase type generation issue
+
 
   const { data: subscription, error } = await supabaseServer
     .from('subscriptions')

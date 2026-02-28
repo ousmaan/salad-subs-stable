@@ -45,6 +45,8 @@ export async function setConfig(
   value: unknown,
   description?: string
 ): Promise<void> {
+  // @ts-ignore - Supabase type generation issue
+
   const { error } = await supabaseServer
     .from('config')
     .upsert({

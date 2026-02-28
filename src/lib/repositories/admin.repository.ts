@@ -35,9 +35,10 @@ export async function createAdmin(data: {
     password_hash: data.passwordHash,
   };
 
+  // @ts-ignore - Supabase type generation issue
   const { data: admin, error } = await supabaseServer
     .from('admins')
-    .insert(insertData as any)
+    .insert(insertData)
     .select()
     .single();
 
@@ -112,9 +113,10 @@ export async function updateAdmin(
   if (data.username !== undefined) updateData.username = data.username;
   if (data.passwordHash !== undefined) updateData.password_hash = data.passwordHash;
 
+  // @ts-ignore - Supabase type generation issue
   const { data: admin, error } = await supabaseServer
     .from('admins')
-    .update(updateData as any)
+    .update(updateData)
     .eq('id', id)
     .select()
     .single();

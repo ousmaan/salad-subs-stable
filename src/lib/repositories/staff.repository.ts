@@ -34,6 +34,9 @@ export async function createStaff(data: { name: string; pinHash: string }): Prom
     is_active: true,
   };
 
+  // @ts-ignore - Supabase type generation issue
+
+
   const { data: staff, error } = await supabaseServer
     .from('staff')
     .insert(insertData as any)
@@ -115,6 +118,9 @@ export async function updateStaff(
   if (data.name !== undefined) updateData.name = data.name;
   if (data.pinHash !== undefined) updateData.pin_hash = data.pinHash;
   if (data.isActive !== undefined) updateData.is_active = data.isActive;
+
+  // @ts-ignore - Supabase type generation issue
+
 
   const { data: staff, error } = await supabaseServer
     .from('staff')

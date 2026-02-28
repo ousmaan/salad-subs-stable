@@ -40,6 +40,9 @@ export async function createRedemption(data: {
     quantity: data.quantity,
   };
 
+  // @ts-ignore - Supabase type generation issue
+
+
   const { data: redemption, error } = await supabaseServer
     .from('redemptions')
     .insert(insertData as any)
