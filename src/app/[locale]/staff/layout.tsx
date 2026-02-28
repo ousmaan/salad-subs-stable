@@ -7,7 +7,6 @@
 import { use, ReactNode } from 'react';
 import { useTranslations } from 'next-intl';
 import { useRouter, usePathname } from 'next/navigation';
-import { Button } from '@/components/ui/Button';
 
 export default function StaffLayout({
   children,
@@ -20,11 +19,6 @@ export default function StaffLayout({
   const t = useTranslations();
   const router = useRouter();
   const pathname = usePathname();
-
-  const handleLogout = async () => {
-    await fetch('/api/auth/logout', { method: 'POST' });
-    router.push(`/${locale}`);
-  };
 
   const isActive = (path: string) => pathname.includes(path);
 
