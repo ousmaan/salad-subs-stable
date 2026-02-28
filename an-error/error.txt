@@ -1,54 +1,54 @@
-23:39:49.914 Running build in Washington, D.C., USA (East) – iad1
-23:39:49.915 Build machine configuration: 2 cores, 8 GB
-23:39:50.056 Cloning github.com/ousmaan/salad-subs-stable (Branch: master, Commit: 3654a5d)
-23:39:50.057 Previous build caches not available.
-23:39:50.390 Cloning completed: 334.000ms
-23:39:52.395 Running "vercel build"
-23:39:53.094 Vercel CLI 50.23.2
-23:39:53.409 Installing dependencies...
-23:39:56.047 npm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
-23:39:56.659 npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
-23:39:57.942 npm warn deprecated @humanwhocodes/config-array@0.13.0: Use @eslint/config-array instead
-23:39:58.030 npm warn deprecated @humanwhocodes/object-schema@2.0.3: Use @eslint/object-schema instead
-23:39:58.061 npm warn deprecated glob@7.2.3: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
-23:39:59.327 npm warn deprecated glob@10.3.10: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
-23:40:01.936 npm warn deprecated eslint@8.57.1: This version is no longer supported. Please see https://eslint.org/version-support for other options.
-23:40:07.322 
-23:40:07.322 added 472 packages in 14s
-23:40:07.322 
-23:40:07.323 170 packages are looking for funding
-23:40:07.323   run `npm fund` for details
-23:40:07.363 Detected Next.js version: 16.1.6
-23:40:07.369 Running "npm run build"
-23:40:07.468 
-23:40:07.468 > salad-subscription-system@1.0.0 build
-23:40:07.468 > next build
-23:40:07.468 
-23:40:08.048 Attention: Next.js now collects completely anonymous telemetry regarding usage.
-23:40:08.049 This information is used to shape Next.js' roadmap and prioritize features.
-23:40:08.049 You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
-23:40:08.049 https://nextjs.org/telemetry
-23:40:08.049 
-23:40:08.064 ▲ Next.js 16.1.6 (Turbopack)
-23:40:08.065 - Experiments (use with caution):
-23:40:08.065   · serverActions
-23:40:08.066 
-23:40:08.073 ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
-23:40:08.102   Creating an optimized production build ...
-23:40:20.266 ✓ Compiled successfully in 11.8s
-23:40:20.267   Running TypeScript ...
-23:40:26.411 Failed to compile.
-23:40:26.411 
-23:40:26.411 ./src/app/api/admin/staff/route.ts:76:11
-23:40:26.412 Type error: Type 'ZodIssue[]' is not assignable to type 'Record<string, unknown>'.
-23:40:26.412   Index signature for type 'string' is missing in type 'ZodIssue[]'.
-23:40:26.412 
-23:40:26.412 [0m [90m 74 |[39m           code[33m:[39m [32m'VALIDATION_ERROR'[39m[33m,[39m
-23:40:26.412  [90m 75 |[39m           message[33m:[39m validationResult[33m.[39merror[33m.[39merrors[[35m0[39m][33m.[39mmessage[33m,[39m
-23:40:26.412 [31m[1m>[22m[39m[90m 76 |[39m           details[33m:[39m validationResult[33m.[39merror[33m.[39merrors[33m,[39m
-23:40:26.412  [90m    |[39m           [31m[1m^[22m[39m
-23:40:26.412  [90m 77 |[39m         }[33m,[39m
-23:40:26.412  [90m 78 |[39m       }[33m;[39m
-23:40:26.412  [90m 79 |[39m       [36mreturn[39m [33mNextResponse[39m[33m.[39mjson(error[33m,[39m { status[33m:[39m [35m400[39m })[33m;[39m[0m
-23:40:26.446 Next.js build worker exited with code: 1 and signal: null
-23:40:26.484 Error: Command "npm run build" exited with 1
+23:42:21.102 Running build in Washington, D.C., USA (East) – iad1
+23:42:21.102 Build machine configuration: 2 cores, 8 GB
+23:42:21.240 Cloning github.com/ousmaan/salad-subs-stable (Branch: master, Commit: f2217cb)
+23:42:21.241 Previous build caches not available.
+23:42:21.578 Cloning completed: 337.000ms
+23:42:23.943 Running "vercel build"
+23:42:24.578 Vercel CLI 50.23.2
+23:42:24.880 Installing dependencies...
+23:42:27.415 npm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
+23:42:28.007 npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+23:42:29.437 npm warn deprecated @humanwhocodes/config-array@0.13.0: Use @eslint/config-array instead
+23:42:29.466 npm warn deprecated @humanwhocodes/object-schema@2.0.3: Use @eslint/object-schema instead
+23:42:29.486 npm warn deprecated glob@7.2.3: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+23:42:30.708 npm warn deprecated glob@10.3.10: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+23:42:33.256 npm warn deprecated eslint@8.57.1: This version is no longer supported. Please see https://eslint.org/version-support for other options.
+23:42:38.755 
+23:42:38.757 added 472 packages in 14s
+23:42:38.757 
+23:42:38.758 170 packages are looking for funding
+23:42:38.758   run `npm fund` for details
+23:42:38.807 Detected Next.js version: 16.1.6
+23:42:38.812 Running "npm run build"
+23:42:38.917 
+23:42:38.918 > salad-subscription-system@1.0.0 build
+23:42:38.918 > next build
+23:42:38.919 
+23:42:39.641 Attention: Next.js now collects completely anonymous telemetry regarding usage.
+23:42:39.642 This information is used to shape Next.js' roadmap and prioritize features.
+23:42:39.643 You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+23:42:39.643 https://nextjs.org/telemetry
+23:42:39.643 
+23:42:39.657 ▲ Next.js 16.1.6 (Turbopack)
+23:42:39.658 - Experiments (use with caution):
+23:42:39.659   · serverActions
+23:42:39.659 
+23:42:39.667 ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+23:42:39.695   Creating an optimized production build ...
+23:42:52.287 ✓ Compiled successfully in 12.2s
+23:42:52.293   Running TypeScript ...
+23:42:58.760 Failed to compile.
+23:42:58.761 
+23:42:58.762 ./src/app/api/auth/admin/login/route.ts:26:11
+23:42:58.762 Type error: Type 'ZodIssue[]' is not assignable to type 'Record<string, unknown>'.
+23:42:58.762   Index signature for type 'string' is missing in type 'ZodIssue[]'.
+23:42:58.762 
+23:42:58.762 [0m [90m 24 |[39m           code[33m:[39m [32m'VALIDATION_ERROR'[39m[33m,[39m
+23:42:58.763  [90m 25 |[39m           message[33m:[39m validationResult[33m.[39merror[33m.[39merrors[[35m0[39m][33m.[39mmessage[33m,[39m
+23:42:58.763 [31m[1m>[22m[39m[90m 26 |[39m           details[33m:[39m validationResult[33m.[39merror[33m.[39merrors[33m,[39m
+23:42:58.763  [90m    |[39m           [31m[1m^[22m[39m
+23:42:58.763  [90m 27 |[39m         }[33m,[39m
+23:42:58.763  [90m 28 |[39m       }[33m;[39m
+23:42:58.764  [90m 29 |[39m       [36mreturn[39m [33mNextResponse[39m[33m.[39mjson(error[33m,[39m { status[33m:[39m [35m400[39m })[33m;[39m[0m
+23:42:58.797 Next.js build worker exited with code: 1 and signal: null
+23:42:58.838 Error: Command "npm run build" exited with 1
