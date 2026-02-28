@@ -43,7 +43,7 @@ export async function GET(
       return NextResponse.json(error, { status: 400 });
     }
 
-    const response: GetRedemptionHistoryResponse = {
+    const response = {
       success: true,
       redemptions: result.redemptions || [],
     };

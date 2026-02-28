@@ -9,6 +9,7 @@ import { createSubscription } from '@/lib/services/subscription.service';
 import { createCustomerSchema } from '@/lib/validators/customer.validator';
 import { CreateCustomerResponse, ApiError } from '@/types/api.types';
 import { listCustomers } from '@/lib/repositories/customer.repository';
+import { PlanType } from '@/types/entities';
 
 /**
  * GET /api/customers - List all customers
@@ -90,7 +91,7 @@ export async function POST(request: NextRequest) {
     // Create subscription
     const subscriptionResult = await createSubscription({
       customerId: customerResult.customer.id,
-      planType,
+      planType: planType as PlanType,
     });
 
     if (!subscriptionResult.success || !subscriptionResult.subscription) {

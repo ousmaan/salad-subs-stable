@@ -72,12 +72,14 @@ export async function POST(request: NextRequest) {
       return NextResponse.json(error, { status: 400 });
     }
 
+    // Get updated subscription
+    const { findSubscriptionById } = await import('@/lib/repositories/subscription.repository');
+    const subscription = await findSubscriptionById(validationResult.data.subscriptionId);
+
     const response: DispenseRedemptionResponse = {
       success: true,
       redemption: result.redemption,
-      subscription: (await import('@/lib/repositories/subscription.repository')).findSubscriptionById(
-        validationResult.data.subscriptionId
-      ).then(sub => sub!),
+      subscription: subscription!,
       remainingSalads: result.remainingSalads!,
     };
 
