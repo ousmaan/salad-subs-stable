@@ -10,9 +10,12 @@ import { RefundSubscriptionResponse, ApiError } from '@/types/api.types';
 
 export async function POST(
   request: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
+    // Await params (Next.js 16 requirement)
+    const { id } = await params;
+
     // Check admin authentication
     const adminSession = request.cookies.get('admin_session')?.value;
     if (!adminSession) {
@@ -31,7 +34,7 @@ export async function POST(
     // Validate input
     const validationResult = refundSubscriptionSchema.safeParse({
       ...body,
-      subscriptionId: params.id,
+      subscriptionId: id,
     });
 
     if (!validationResult.success) {
@@ -48,7 +51,7 @@ export async function POST(
 
     // Process refund
     const result = await refundSubscription({
-      subscriptionId: params.id,
+      subscriptionId: id,
       adminId: adminSession,
       reason: validationResult.data.reason,
       partialRefund: validationResult.data.partialRefund,

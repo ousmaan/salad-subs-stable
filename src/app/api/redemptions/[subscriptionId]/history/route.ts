@@ -9,9 +9,12 @@ import { GetRedemptionHistoryResponse, ApiError } from '@/types/api.types';
 
 export async function GET(
   request: NextRequest,
-  { params }: { params: { subscriptionId: string } }
+  { params }: { params: Promise<{ subscriptionId: string }> }
 ) {
   try {
+    // Await params (Next.js 16 requirement)
+    const { subscriptionId } = await params;
+
     // Check authentication
     const session = request.cookies.get('session')?.value;
     const adminSession = request.cookies.get('admin_session')?.value;
@@ -27,7 +30,7 @@ export async function GET(
       return NextResponse.json(error, { status: 401 });
     }
 
-    const result = await getRedemptionHistory(params.subscriptionId);
+    const result = await getRedemptionHistory(subscriptionId);
 
     if (!result.success) {
       const error: ApiError = {

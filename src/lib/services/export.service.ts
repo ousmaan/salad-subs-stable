@@ -151,7 +151,7 @@ export async function exportSubscriptionsSummary(): Promise<{
       .filter((s) => s.status === SubscriptionStatus.REFUNDED)
       .reduce((sum, s) => sum + (s.refundAmount || 0), 0);
 
-    const weeklyCount = subs.filter((s) => s.planType === PlanType.WEEKLY).length;
+    const biweeklyCount = subs.filter((s) => s.planType === PlanType.BIWEEKLY).length;
     const monthlyCount = subs.filter((s) => s.planType === PlanType.MONTHLY).length;
 
     // Create summary text
@@ -168,7 +168,7 @@ export async function exportSubscriptionsSummary(): Promise<{
 - مسترجع: ${refundedCount}
 
 حسب النوع:
-- أسبوعي: ${weeklyCount}
+- نصف شهري: ${biweeklyCount}
 - شهري: ${monthlyCount}
 
 الإيرادات:

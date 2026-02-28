@@ -184,9 +184,9 @@ export interface PlanTypeDisplay {
 }
 
 export const planTypeDisplay: Record<PlanType, PlanTypeDisplay> = {
-  [PlanType.WEEKLY]: {
-    labelAr: 'أسبوعي',
-    labelEn: 'Weekly',
+  [PlanType.BIWEEKLY]: {
+    labelAr: 'نصف شهري',
+    labelEn: 'Biweekly',
     color: 'blue',
   },
   [PlanType.MONTHLY]: {
