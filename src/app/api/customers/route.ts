@@ -7,7 +7,6 @@ import { NextRequest, NextResponse } from 'next/server';
 import { getOrCreateCustomer } from '@/lib/services/customer.service';
 import { createSubscription } from '@/lib/services/subscription.service';
 import { createCustomerSchema } from '@/lib/validators/customer.validator';
-import { generateBarcodeSVG } from '@/lib/utils/barcode';
 import { CreateCustomerResponse, ApiError } from '@/types/api.types';
 import { listCustomers } from '@/lib/repositories/customer.repository';
 
