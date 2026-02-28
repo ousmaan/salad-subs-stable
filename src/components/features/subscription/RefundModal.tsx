@@ -56,10 +56,10 @@ export function RefundModal({ isOpen, onClose, subscription, onSuccess }: Refund
   const [error, setError] = useState('');
 
   const usedSalads = subscription.totalSalads - subscription.remainingSalads;
-  // Calculate refund amounts for display (if needed in future)
-  // const pricePerSalad = subscription.price / subscription.totalSalads;
-  // const partialRefundAmount = Math.round(subscription.remainingSalads * pricePerSalad * 100) / 100;
-  // const refundAmount = refundType === 'full' ? subscription.price : partialRefundAmount;
+  // Calculate refund amounts for display
+  const pricePerSalad = subscription.price / subscription.totalSalads;
+  const partialRefundAmount = Math.round(subscription.remainingSalads * pricePerSalad * 100) / 100;
+  const refundAmount = refundType === 'full' ? subscription.price : partialRefundAmount;
 
   const handleSubmit = async () => {
     // Validate using HTML5 validation
