@@ -50,7 +50,6 @@ export async function GET(request: NextRequest) {
                 id: admin.id,
                 username: admin.username,
                 type: 'admin',
-                role: 'admin', // Add role field for compatibility
               },
             };
             return NextResponse.json(response);
