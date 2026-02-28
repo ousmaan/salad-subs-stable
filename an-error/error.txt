@@ -1,54 +1,58 @@
-01:11:21.663 Running build in Washington, D.C., USA (East) – iad1
-01:11:21.663 Build machine configuration: 2 cores, 8 GB
-01:11:21.783 Cloning github.com/ousmaan/salad-subs-stable (Branch: master, Commit: 82bd7ba)
-01:11:21.784 Previous build caches not available.
-01:11:22.092 Cloning completed: 309.000ms
-01:11:24.161 Running "vercel build"
-01:11:24.793 Vercel CLI 50.23.2
-01:11:25.108 Installing dependencies...
-01:11:27.632 npm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
-01:11:28.143 npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
-01:11:29.490 npm warn deprecated @humanwhocodes/config-array@0.13.0: Use @eslint/config-array instead
-01:11:29.543 npm warn deprecated @humanwhocodes/object-schema@2.0.3: Use @eslint/object-schema instead
-01:11:29.566 npm warn deprecated glob@7.2.3: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
-01:11:30.741 npm warn deprecated glob@10.3.10: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
-01:11:33.425 npm warn deprecated eslint@8.57.1: This version is no longer supported. Please see https://eslint.org/version-support for other options.
-01:11:38.869 
-01:11:38.869 added 472 packages in 13s
-01:11:38.870 
-01:11:38.870 170 packages are looking for funding
-01:11:38.870   run `npm fund` for details
-01:11:38.944 Detected Next.js version: 16.1.6
-01:11:38.950 Running "npm run build"
-01:11:39.053 
-01:11:39.054 > salad-subscription-system@1.0.0 build
-01:11:39.054 > next build
-01:11:39.054 
-01:11:39.685 Attention: Next.js now collects completely anonymous telemetry regarding usage.
-01:11:39.686 This information is used to shape Next.js' roadmap and prioritize features.
-01:11:39.686 You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
-01:11:39.687 https://nextjs.org/telemetry
-01:11:39.687 
-01:11:39.704 ▲ Next.js 16.1.6 (Turbopack)
-01:11:39.704 - Experiments (use with caution):
-01:11:39.705   · serverActions
-01:11:39.705 
-01:11:39.715 ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
-01:11:39.742   Creating an optimized production build ...
-01:11:51.805 ✓ Compiled successfully in 11.7s
-01:11:51.805   Running TypeScript ...
-01:11:57.956 Failed to compile.
-01:11:57.956 
-01:11:57.956 ./src/hooks/useFormValidation.ts:35:51
-01:11:57.956 Type error: Type 'string | null' is not assignable to type 'string | number | Date'.
-01:11:57.957   Type 'null' is not assignable to type 'string | number | Date'.
-01:11:57.957 
-01:11:57.957 [0m [90m 33 |[39m       } [36melse[39m [36mif[39m (target[33m.[39mvalidity[33m.[39mtooShort) {
-01:11:57.957  [90m 34 |[39m         [36mconst[39m minLength [33m=[39m target[33m.[39mgetAttribute([32m'minlength'[39m)[33m;[39m
-01:11:57.957 [31m[1m>[22m[39m[90m 35 |[39m         target[33m.[39msetCustomValidity(t([32m'minLength'[39m[33m,[39m { min[33m:[39m minLength }))[33m;[39m
-01:11:57.957  [90m    |[39m                                                   [31m[1m^[22m[39m
-01:11:57.957  [90m 36 |[39m       } [36melse[39m [36mif[39m (target[33m.[39mvalidity[33m.[39mtooLong) {
-01:11:57.957  [90m 37 |[39m         [36mconst[39m maxLength [33m=[39m target[33m.[39mgetAttribute([32m'maxlength'[39m)[33m;[39m
-01:11:57.957  [90m 38 |[39m         target[33m.[39msetCustomValidity(t([32m'maxLength'[39m[33m,[39m { max[33m:[39m maxLength }))[33m;[39m[0m
-01:11:57.992 Next.js build worker exited with code: 1 and signal: null
-01:11:58.032 Error: Command "npm run build" exited with 1
+01:18:15.359 Running build in Washington, D.C., USA (East) – iad1
+01:18:15.360 Build machine configuration: 2 cores, 8 GB
+01:18:15.485 Cloning github.com/ousmaan/salad-subs-stable (Branch: master, Commit: 9013505)
+01:18:15.486 Previous build caches not available.
+01:18:15.792 Cloning completed: 307.000ms
+01:18:17.853 Running "vercel build"
+01:18:18.507 Vercel CLI 50.23.2
+01:18:18.834 Installing dependencies...
+01:18:21.476 npm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
+01:18:22.024 npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+01:18:23.275 npm warn deprecated @humanwhocodes/config-array@0.13.0: Use @eslint/config-array instead
+01:18:23.342 npm warn deprecated @humanwhocodes/object-schema@2.0.3: Use @eslint/object-schema instead
+01:18:23.364 npm warn deprecated glob@7.2.3: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+01:18:24.644 npm warn deprecated glob@10.3.10: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+01:18:27.274 npm warn deprecated eslint@8.57.1: This version is no longer supported. Please see https://eslint.org/version-support for other options.
+01:18:32.808 
+01:18:32.808 added 472 packages in 14s
+01:18:32.808 
+01:18:32.808 170 packages are looking for funding
+01:18:32.809   run `npm fund` for details
+01:18:32.857 Detected Next.js version: 16.1.6
+01:18:32.921 Running "npm run build"
+01:18:33.011 
+01:18:33.011 > salad-subscription-system@1.0.0 build
+01:18:33.011 > next build
+01:18:33.012 
+01:18:33.707 Attention: Next.js now collects completely anonymous telemetry regarding usage.
+01:18:33.708 This information is used to shape Next.js' roadmap and prioritize features.
+01:18:33.708 You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+01:18:33.708 https://nextjs.org/telemetry
+01:18:33.708 
+01:18:33.723 ▲ Next.js 16.1.6 (Turbopack)
+01:18:33.724 - Experiments (use with caution):
+01:18:33.725   · serverActions
+01:18:33.725 
+01:18:33.735 ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+01:18:33.762   Creating an optimized production build ...
+01:18:46.395 ✓ Compiled successfully in 12.3s
+01:18:46.397   Running TypeScript ...
+01:18:52.652 Failed to compile.
+01:18:52.652 
+01:18:52.652 ./src/lib/repositories/admin.repository.ts:40:13
+01:18:52.652 Type error: No overload matches this call.
+01:18:52.653   Overload 1 of 2, '(values: never, options?: { count?: "exact" | "planned" | "estimated" | undefined; } | undefined): PostgrestFilterBuilder<{ PostgrestVersion: "12"; }, never, never, null, "admins", never, "POST">', gave the following error.
+01:18:52.653     Argument of type '{ id?: string | undefined; username: string; password_hash: string; created_at?: string | undefined; updated_at?: string | undefined; }' is not assignable to parameter of type 'never'.
+01:18:52.653   Overload 2 of 2, '(values: never[], options?: { count?: "exact" | "planned" | "estimated" | undefined; defaultToNull?: boolean | undefined; } | undefined): PostgrestFilterBuilder<{ PostgrestVersion: "12"; }, never, never, null, "admins", never, "POST">', gave the following error.
+01:18:52.653     Argument of type '{ id?: string | undefined; username: string; password_hash: string; created_at?: string | undefined; updated_at?: string | undefined; }' is not assignable to parameter of type 'never[]'.
+01:18:52.654       Type '{ id?: string | undefined; username: string; password_hash: string; created_at?: string | undefined; updated_at?: string | undefined; }' is missing the following properties from type 'never[]': length, pop, push, concat, and 35 more.
+01:18:52.654 
+01:18:52.654 [0m [90m 38 |[39m   [36mconst[39m { data[33m:[39m admin[33m,[39m error } [33m=[39m [36mawait[39m supabaseServer
+01:18:52.655  [90m 39 |[39m     [33m.[39m[36mfrom[39m([32m'admins'[39m)
+01:18:52.655 [31m[1m>[22m[39m[90m 40 |[39m     [33m.[39minsert(insertData)
+01:18:52.655  [90m    |[39m             [31m[1m^[22m[39m
+01:18:52.655  [90m 41 |[39m     [33m.[39mselect()
+01:18:52.655  [90m 42 |[39m     [33m.[39msingle()[33m;[39m
+01:18:52.655  [90m 43 |[39m[0m
+01:18:52.689 Next.js build worker exited with code: 1 and signal: null
+01:18:52.729 Error: Command "npm run build" exited with 1

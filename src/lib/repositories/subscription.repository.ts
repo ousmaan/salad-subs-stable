@@ -62,7 +62,7 @@ export async function createSubscription(data: {
 
   const { data: subscription, error } = await supabaseServer
     .from('subscriptions')
-    .insert(insertData)
+    .insert(insertData as any)
     .select()
     .single();
 
@@ -260,7 +260,7 @@ export async function updateSubscription(
 
   const { data: subscription, error } = await supabaseServer
     .from('subscriptions')
-    .update(updateData)
+    .update(updateData as any)
     .eq('id', id)
     .select()
     .single();

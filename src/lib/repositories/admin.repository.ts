@@ -37,7 +37,7 @@ export async function createAdmin(data: {
 
   const { data: admin, error } = await supabaseServer
     .from('admins')
-    .insert(insertData)
+    .insert(insertData as any)
     .select()
     .single();
 
@@ -114,7 +114,7 @@ export async function updateAdmin(
 
   const { data: admin, error } = await supabaseServer
     .from('admins')
-    .update(updateData)
+    .update(updateData as any)
     .eq('id', id)
     .select()
     .single();

@@ -49,9 +49,9 @@ export async function setConfig(
     .from('config')
     .upsert({
       key,
-      value: value as Database['public']['Tables']['config']['Insert']['value'],
+      value: value as any,
       description: description || null,
-    })
+    } as any)
     .eq('key', key);
 
   if (error) {

@@ -48,7 +48,7 @@ export async function createAuditLog(data: {
 
   const { data: auditLog, error } = await supabaseServer
     .from('audit_logs')
-    .insert(insertData)
+    .insert(insertData as any)
     .select()
     .single();
 

@@ -42,7 +42,7 @@ export async function createRedemption(data: {
 
   const { data: redemption, error } = await supabaseServer
     .from('redemptions')
-    .insert(insertData)
+    .insert(insertData as any)
     .select()
     .single();
 

@@ -36,7 +36,7 @@ export async function createStaff(data: { name: string; pinHash: string }): Prom
 
   const { data: staff, error } = await supabaseServer
     .from('staff')
-    .insert(insertData)
+    .insert(insertData as any)
     .select()
     .single();
 
@@ -118,7 +118,7 @@ export async function updateStaff(
 
   const { data: staff, error } = await supabaseServer
     .from('staff')
-    .update(updateData)
+    .update(updateData as any)
     .eq('id', id)
     .select()
     .single();

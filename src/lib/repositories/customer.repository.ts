@@ -37,7 +37,7 @@ export async function createCustomer(data: {
 
   const { data: customer, error } = await supabaseServer
     .from('customers')
-    .insert(insertData)
+    .insert(insertData as any)
     .select()
     .single();
 
@@ -139,7 +139,7 @@ export async function updateCustomer(
 ): Promise<Customer> {
   const { data: customer, error } = await supabaseServer
     .from('customers')
-    .update(data)
+    .update(data as any)
     .eq('id', id)
     .select()
     .single();
