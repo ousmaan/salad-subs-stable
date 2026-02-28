@@ -1,0 +1,20 @@
+{
+  "name": "Spool Salad Terminal",
+  "short_name": "Spool Salad",
+  "description": "Point of Sale System for Spool Salad Bar",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#4CAF50",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "assets/images/logo-transparent.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "food", "productivity"],
+  "shortcuts": []
+}

@@ -1,0 +1,153 @@
+{
+  "shop": {
+    "name": "Spool",
+    "nameAr": "سبول",
+    "tagline": "For all that the fields produce",
+    "taglineAr": "لكل ما تنتجه الحقول",
+    "logo": "assets/images/logo-transparent.png",
+    "currency": "SAR",
+    "primaryColor": "#2d5016",
+    "accentColor": "#d4af37"
+  },
+  "categories": [
+    {
+      "id": "salad",
+      "name": "Salads",
+      "nameAr": "السلطات",
+      "emoji": "🥗"
+    },
+    {
+      "id": "juice",
+      "name": "Fresh Juices",
+      "nameAr": "العصائر الطازجة",
+      "emoji": "🥤"
+    }
+  ],
+  "baseSalads": [
+    {
+      "id": "quinoa-tabbouleh",
+      "itemCode": "500001",
+      "name": "Quinoa Tabbouleh Salad",
+      "nameAr": "سلطة كينوا تبولة",
+      "price": 19,
+      "description": "Quinoa with traditional tabbouleh flavors",
+      "descriptionAr": "كينوا مع نكهات التبولة التقليدية"
+    },
+    {
+      "id": "date-salad",
+      "itemCode": "500002",
+      "name": "Date Salad",
+      "nameAr": "سلطة التمر",
+      "price": 19,
+      "description": "Fresh salad with dates",
+      "descriptionAr": "سلطة طازجة مع التمر"
+    },
+    {
+      "id": "fusilli-broccoli",
+      "itemCode": "500003",
+      "name": "Fusilli Broccoli Salad",
+      "nameAr": "سلطة فيوزلي بروكلي",
+      "price": 20,
+      "description": "Fusilli pasta with fresh broccoli",
+      "descriptionAr": "معكرونة فيوزلي مع بروكلي طازج"
+    },
+    {
+      "id": "tuna-salad",
+      "itemCode": "500004",
+      "name": "Tuna Salad",
+      "nameAr": "سلطة تونة",
+      "price": 19,
+      "description": "Fresh tuna salad",
+      "descriptionAr": "سلطة تونة طازجة"
+    },
+    {
+      "id": "caesar",
+      "itemCode": "500006",
+      "name": "Caesar Salad",
+      "nameAr": "سلطة السيزر",
+      "price": 19,
+      "description": "Classic Caesar with romaine and parmesan",
+      "descriptionAr": "سيزر كلاسيكية مع خس روماني وبارميزان"
+    },
+    {
+      "id": "custom",
+      "itemCode": "500005",
+      "name": "Build Your Own",
+      "nameAr": "سلطة حسب الطلب",
+      "price": 13,
+      "description": "Create your own custom salad",
+      "descriptionAr": "أنشئ سلطتك الخاصة"
+    }
+  ],
+  "juices": [
+    {
+      "id": "fresh-juice",
+      "itemCode": "600001",
+      "name": "Fresh Juice",
+      "nameAr": "عصير طازج",
+      "sizes": [
+        {
+          "id": "medium",
+          "name": "Medium",
+          "nameAr": "وسط",
+          "price": 10
+        },
+        {
+          "id": "large",
+          "name": "Large",
+          "nameAr": "كبير",
+          "price": 13
+        }
+      ],
+      "description": "Fresh and healthy juice",
+      "descriptionAr": "عصير طازج وصحي"
+    }
+  ],
+  "toppings": [
+    {
+      "category": "Sauces",
+      "categoryAr": "الصوصات",
+      "items": [
+        { "id": "dill-sauce", "name": "Dill Sauce", "nameAr": "صوص شبت", "price": 3 },
+        { "id": "kale-sauce", "name": "Kale Sauce", "nameAr": "صوص الكيل", "price": 5 },
+        { "id": "caesar-sauce", "name": "Caesar Sauce", "nameAr": "صوص السيزر", "price": 4 },
+        { "id": "pesto-sauce", "name": "Pesto Sauce", "nameAr": "صوص البسيتو", "price": 7 },
+        { "id": "vinaigrette-sauce", "name": "Vinaigrette Sauce", "nameAr": "صوص فيناجريت", "price": 5 }
+      ]
+    },
+    {
+      "category": "Add-ons",
+      "categoryAr": "إضافات",
+      "items": [
+        { "id": "extra-protein", "name": "Extra Protein", "nameAr": "إضافة بروتين", "price": 7 }
+      ]
+    },
+    {
+      "category": "Vegetables",
+      "categoryAr": "الخضروات",
+      "items": [
+        { "id": "broccoli", "name": "Broccoli", "nameAr": "بروكلي", "price": 1 },
+        { "id": "bell-peppers", "name": "Bell Peppers", "nameAr": "فلفل الوان", "price": 1 },
+        { "id": "corn", "name": "Corn", "nameAr": "ذرة", "price": 1 },
+        { "id": "beets", "name": "Beets", "nameAr": "شمندر", "price": 1 },
+        { "id": "cherry-tomatoes", "name": "Cherry Tomatoes", "nameAr": "طماطم مشيري", "price": 1 }
+      ]
+    },
+    {
+      "category": "Cheese",
+      "categoryAr": "الأجبان",
+      "items": [
+        { "id": "feta-cheese", "name": "Feta Cheese", "nameAr": "جبنة فيتا", "price": 1 },
+        { "id": "parmesan-cheese", "name": "Parmesan Cheese", "nameAr": "جبنة بيرمزان", "price": 1 }
+      ]
+    },
+    {
+      "category": "Fruits",
+      "categoryAr": "الفواكه",
+      "items": [
+        { "id": "strawberries", "name": "Strawberries", "nameAr": "فراولة", "price": 1 },
+        { "id": "pomegranate", "name": "Pomegranate", "nameAr": "رمان", "price": 1 }
+      ]
+    }
+  ]
+}
